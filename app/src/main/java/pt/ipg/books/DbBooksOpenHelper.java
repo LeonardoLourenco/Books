@@ -32,6 +32,9 @@ public class DbBooksOpenHelper extends SQLiteOpenHelper {
         DbTableCategorias dbTableCategorias = new DbTableCategorias(db);
         dbTableCategorias.create();
 
+        DbTableBooks dbTableBooks = new DbTableBooks(db);
+        dbTableBooks.create();
+
     }
 
     /**
