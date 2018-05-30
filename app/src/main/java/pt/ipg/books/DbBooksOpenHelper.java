@@ -29,7 +29,8 @@ public class DbBooksOpenHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        DbTableCategorias dbTableCategorias = new DbTableCategorias(db);
+        dbTableCategorias.create();
 
     }
 
